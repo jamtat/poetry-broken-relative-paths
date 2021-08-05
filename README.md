@@ -15,6 +15,11 @@ pushd common/otherlib; poetry install; popd
 poetry install
 ```
 
+## Expected result
+- In the case that having a package be in the subtree of another package is supported the relative path should be properly adjusted to be relative to the pyproject.toml
+- In this case that this behaviour is unsupported a more descriptive error should be raised, possibly referencing this issue and saying something like "Packages may not exist as a subtree of a dependant package"
+
+
 ## Result
 
 ```
@@ -113,10 +118,6 @@ poetry install
        44│             raise ValueError("{} is a file, expected a directory".format(self._path))
        45│ 
 ```
-
-## Expected result
-
-The relative path is corrected to be relative to the root pyproject.toml and the package is installed correctly
 
 ## Directory Structure:
 ```
