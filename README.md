@@ -6,7 +6,9 @@ Relative path imports fail when there is a dependency tree such that:
 - `otherlib` and `baselib` share a filepath with pyproject.toml such that if pyproject.toml is at `<path>/pyproject.toml`, other libs are at `<path>/<any descendant path>/{otherlib,baselib}`
 
 ## Steps to reproduce
-
+- Have poetry 1.1.17
+- Latest pip
+- Run:
 ```
 pushd common/baselib; poetry install; popd
 pushd common/otherlib; poetry install; popd
