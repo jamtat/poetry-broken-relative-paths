@@ -14,7 +14,7 @@ url = "../baselib"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "aae6f8b5e30799b9dbedface6e07be5956d8b0f4223b9865ae6531f3f9519f86"
+content-hash = "198eabaa11eb062fae7faad263605b0a320875a5067bb82e16406ed49d4c63b7"
 
 [metadata.files]
 baselib = []
