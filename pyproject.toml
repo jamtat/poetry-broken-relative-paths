@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-otherlib = {path = "../common/otherlib/", develop = true}
+otherlib = {path = "./common/otherlib/", develop = true}
 
 [tool.poetry.dev-dependencies]
 
